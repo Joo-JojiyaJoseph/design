@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lightblue: '#1F2935',
+            skyblue: '#0ABEAD',
+            darkblue: '#161D26',
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+      
+  </style>
+</head>
+<body class="bg-lightblue">
+
+  <header class="">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="mx-auto lg:flex-1">
+        <a href="#" class=" p-1.5">
+          <h2 class="uppercase text-4xl  font-semibold md:font-bold text-skyblue ">AM.</h2>
+        </a>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="#" class="font-semibold leading-6 text-gray-400">Home</a>
+        <a href="#" class="font-semibold leading-6 text-gray-400">About Us</a>
+        <a href="#" class="font-semibold leading-6 text-gray-400">Resume</a>
+        <a href="#" class="font-semibold leading-6 text-gray-400">services</a>
+        <a href="#" class="font-semibold leading-6 text-gray-400">Portfolio</a>
+        <a href="#" class="font-semibold leading-6 text-gray-400">Pricing</a>
+        <a href="#" class="font-semibold leading-6 text-gray-400">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+
+  <section id="herosection">
+    <div class="bg-darkblue">
+        <div class="container mx-auto grid grid-cols-2 p-20">
+          <div><p>ygtfrdesa</p></div>
+          <div></div>
+        </div>
+    </div>
+    <div class="bg-lightblue h-11"></div>
+  </section>
+
+
+  <section class="bg-darkblue">
+    <div class="container mx-auto p-10 ">
+          <div class="pt-10">
+            <h2 class="text-skyblue text-4xl font-bold p-2 text-center">About Us</h2>
+            <p class=" leading-6 text-gray-400 text-center">Why Choose Me?</p>
+          </div>
+
+            <div class="grid grid-cols-2 m-20 bg-lightblue ">
+              <div>
+                <img class="w-full h-full" src="https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg"/>
+              </div>
+              <div class="flex items-center p-10">
+                <h3 class="font-semibold leading-6 text-gray-400">Why Choose me</h3>
+              </div>
+
+            </div>
+    </div>
+  </section>
+</body>
+</html>
