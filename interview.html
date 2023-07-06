@@ -1,82 +1,129 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
- 
-    <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            lightblue: '#1F2935',
-            skyblue: '#0ABEAD',
-            darkblue: '#161D26',
-          }
-        }
-      }
-    }
-  </script>
-  <style type="text/tailwindcss">
-    @layer utilities {
-      .content-auto {
-        content-visibility: auto;
-      }
-    }
-      
-  </style>
-</head>
-<body class="bg-lightblue">
+ <!doctype html>
+ <html>
 
-  <header class="">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-      <div class="mx-auto lg:flex-1">
-        <a href="#" class=" p-1.5">
-          <h2 class="uppercase text-4xl  font-semibold md:font-bold text-skyblue ">AM.</h2>
-        </a>
-      </div>
-      <div class="hidden lg:flex lg:gap-x-12">
-        <a href="#" class="font-semibold leading-6 text-gray-400">Home</a>
-        <a href="#" class="font-semibold leading-6 text-gray-400">About Us</a>
-        <a href="#" class="font-semibold leading-6 text-gray-400">Resume</a>
-        <a href="#" class="font-semibold leading-6 text-gray-400">services</a>
-        <a href="#" class="font-semibold leading-6 text-gray-400">Portfolio</a>
-        <a href="#" class="font-semibold leading-6 text-gray-400">Pricing</a>
-        <a href="#" class="font-semibold leading-6 text-gray-400">Contact</a>
-      </div>
-    </nav>
-  </header>
+ <head>
+     <title>Design</title>
+
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.tailwindcss.com"></script>
+
+     <script>
+         tailwind.config = {
+             theme: {
+                 extend: {
+                     colors: {
+                         lightblue: '#1F2935',
+                         skyblue: '#0ABEAD',
+                         darkblue: '#161D26',
+                         orange: '#F57F17',
+                         skyblueshadow: '#0BBEAD69',
+                         orangeshadow: '#F57F173D',
+                     }
+                 }
+             }
+         }
+     </script>
+     <style type="text/tailwindcss">
+         @layer utilities {
+             .content-auto {
+                 content-visibility: auto;
+             }
+
+     .bubble::after {
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    background-color: #0f0f10;
+    height: 85%;
+}
+
+         }
+     </style>
+ </head>
+
+ <body class="bg-lightblue">
+
+     <header class="">
+         <nav class="mx-auto flex max-w-7xl items-center justify-between lg:px-8" aria-label="Global">
+             <div class="mx-auto lg:flex-1">
+                 <a href="#" class="justify-center p-1.5">
+                     <h2 class="uppercase text-6xl font-bold md:font-bold text-skyblue ">AM.</h2>
+                 </a>
+             </div>
+             <div class="hidden lg:flex lg:gap-x-12">
+                 <a href="#" class="font-semibold leading-6 text-gray-400">Home</a>
+                 <a href="#" class="font-semibold leading-6 text-gray-400">About Us</a>
+                 <a href="#" class="font-semibold leading-6 text-gray-400">Resume</a>
+                 <a href="#" class="font-semibold leading-6 text-gray-400">services</a>
+                 <a href="#" class="font-semibold leading-6 text-gray-400">Portfolio</a>
+                 <a href="#" class="font-semibold leading-6 text-gray-400">Pricing</a>
+                 <a href="#" class="font-semibold leading-6 text-gray-400">Contact</a>
+             </div>
+         </nav>
+     </header>
 
 
-  <section id="herosection">
-    <div class="bg-darkblue">
-        <div class="container mx-auto grid grid-cols-2 p-20">
-          <div><p>ygtfrdesa</p></div>
-          <div></div>
-        </div>
-    </div>
-    <div class="bg-lightblue h-11"></div>
-  </section>
+     <section id="herosection bubble">
+         <div class="bg-darkblue bubble">
+             <div id="home"
+                 class="container mx-auto grid grid-cols-1 md:grid-cols-2 p-20 px-24 md:h-screen items-center justify-center">
+                 <!-- Home image -->
+                 <div class="flex justify-center md:order-last order-first ">
+                     <div class="border-[16px] border-lightblue rounded-full">
+                         <img class="border-[0.5px] border-white rounded-full w-[450px] h-[450px] object-fit"
+                             src="data:image/jpeg;base64,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"
+                             alt="design hero section">
+                     </div>
+                 </div>
+                 <div class="flex flex-col justify-center w-full  h-full pt-10 md:pt-0">
+                     <p class="text-skyblue text-lg md:text-3xl py-3 text-left font-bold px-2">
+                         Hello, IM <span class="text-orange">Ali Morshedlou</span>
+                     </p>
+                     <h1 class="text-6xl 2xl:text-7xl text-skyblue font-bold text-left">Creative Designer</h1>
+                     <p class="text-gray-400 text-lg py-3 text-left px-2">Freelancer Web/ Mobile UI/UX Designer with
+                         Motion Graphics
+                     </p>
+                     <div class="flex py-5">
+                         <button
+                             class="rounded-full bg-skyblue text-white py-4 w-48 mx-6 shadow-lg shadow-skyblueshadow">Hire
+                             Me</button>
+                         <button
+                             class="rounded-full bg-orange text-white py-4 w-48 mx-6 shadow-lg shadow-orangeshadow">Get
+                             Resume</button>
+                     </div>
 
 
-  <section class="bg-darkblue">
-    <div class="container mx-auto p-10 ">
-          <div class="pt-10">
-            <h2 class="text-skyblue text-4xl font-bold p-2 text-center">About Us</h2>
-            <p class=" leading-6 text-gray-400 text-center">Why Choose Me?</p>
-          </div>
+                 </div>
+             </div>
+         </div>
+         <div class="bg-lightblue h-11"></div>
+     </section>
 
-            <div class="grid grid-cols-2 m-20 bg-lightblue ">
-              <div>
-                <img class="w-full h-full" src="https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg"/>
-              </div>
-              <div class="flex items-center p-10">
-                <h3 class="font-semibold leading-6 text-gray-400">Why Choose me</h3>
-              </div>
 
-            </div>
-    </div>
-  </section>
-</body>
-</html>
+     <section class="bg-darkblue">
+         <div class="container mx-auto p-10 ">
+             <div class="pt-10">
+                 <h2 class="text-skyblue text-4xl font-bold p-2 text-center">About Us</h2>
+                 <p class=" leading-6 text-gray-400 text-center">Why Choose Me?</p>
+             </div>
+
+             <div class="grid grid-cols-2 m-20 bg-lightblue ">
+                 <div>
+                     <img class="w-full h-full"
+                         src="https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg" />
+                 </div>
+                 <div class="flex items-center p-10">
+                     <h3 class="font-semibold leading-6 text-gray-400">Why Choose me</h3>
+                 </div>
+
+             </div>
+         </div>
+     </section>
+ </body>
+
+ </html>
