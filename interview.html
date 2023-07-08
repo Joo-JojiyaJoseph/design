@@ -19,6 +19,7 @@
                          orange: '#F57F17',
                          skyblueshadow: '#0BBEAD69',
                          orangeshadow: '#F57F173D',
+                         darkshadow:'#5B5B5B',
                      }
                  }
              }
@@ -30,18 +31,7 @@
                  content-visibility: auto;
              }
 
-     .bubble::after {
-    content: '';
-    border-top-left-radius: 50% 100%;
-    border-top-right-radius: 50% 100%;
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-    width: 100%;
-    background-color: #0f0f10;
-    height: 85%;
-}
-
+   
          }
      </style>
      <style>
@@ -73,8 +63,8 @@
      </header>
 
 
-     <section id="herosection bubble">
-         <div class="bg-darkblue bubble">
+     <section id="herosection">
+         <div class="bg-darkblue">
              <div id="home"
                  class="container mx-auto grid grid-cols-1 md:grid-cols-2 p-20 px-24 md:h-screen items-center justify-center">
                  <!-- Home image -->
@@ -111,10 +101,11 @@
 
 
      <section class="bg-darkblue">
+  <!-- about section -->
          <div class="container mx-auto p-10 ">
              <div class="pt-10">
-                 <h2 class="text-skyblue text-4xl font-bold p-2 text-center">About Us</h2>
-                 <p class=" leading-6 text-gray-400 text-center">Why Choose Me?</p>
+                 <h2 class="text-skyblue text-5xl font-bold p-2 text-center">About Us</h2>
+                 <p class=" leading-6 text-gray-400 text-center text-xl py-4">Why Choose Me?</p>
              </div>
 
              <div class="grid grid-cols-2 mt-20 bg-lightblue ">
@@ -148,6 +139,140 @@
                     </div>
 
              </div>
+         </div>
+
+  <!-- services section -->
+         <div class="container mx-auto p-10 ">
+            <div class="pt-10">
+                <h2 class="text-skyblue text-5xl font-bold p-2 text-center">Services</h2>
+                <p class=" leading-6 text-gray-400 text-center  text-xl py-4">What We Provide You ?</p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-12 mt-20">
+                <div class="bg-[#8540FF] flex flex-col items-center justify-center p-10 h-80">
+                    <div><svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 fill-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"  >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                      </svg>
+                      </div>
+                    <h3 class="text-white font-bold text-xl py-4">Web Design</h3>
+                    <p class="text-white text-lg text-center">Lipsum as it is sometimes known is dummy text used in laying out print, graphic or web designs.</p>
+                </div>
+
+                <div class="bg-[#FFC50C] flex flex-col items-center justify-center p-10 h-80">
+                    <div><svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 fill-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"  >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                      </svg>
+                      </div>
+                    <h3 class="text-white font-bold text-xl py-4">Interface Design</h3>
+                    <p class="text-white text-lg text-center">Lipsum as it is sometimes known is dummy text used in laying out print, graphic or web designs.</p>
+                </div>
+
+                <div class="bg-[#EC407A] flex flex-col items-center justify-center p-10 h-80">
+                    <div><svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 fill-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"  >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                      </svg>
+                      </div>
+                    <h3 class="text-white font-bold text-xl py-4">Web Development</h3>
+                    <p class="text-white text-lg text-center">Lipsum as it is sometimes known is dummy text used in laying out print, graphic or web designs.</p>
+                </div>
+
+                <div class="bg-[#FF6331] flex flex-col items-center justify-center p-10 h-80">
+                    <div><svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 fill-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"  >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                      </svg>
+                      </div>
+                    <h3 class="text-white font-bold text-xl py-4">UX Design</h3>
+                    <p class="text-white text-lg text-center">Lipsum as it is sometimes known is dummy text used in laying out print, graphic or web designs.</p>
+                </div>
+
+                <div class="bg-[#13B6FF] flex flex-col items-center justify-center p-10 h-80">
+                    <div><svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 fill-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"  >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                      </svg>
+                      </div>
+                    <h3 class="text-white font-bold text-xl py-4">Motion Graphic</h3>
+                    <p class="text-white text-lg text-center">Lipsum as it is sometimes known is dummy text used in laying out print, graphic or web designs.</p>
+                </div>
+
+                <div class="bg-[#49AF46] flex flex-col items-center justify-center p-10 h-80">
+                    <div><svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 fill-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"  >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                      </svg>
+                      </div>
+                    <h3 class="text-white font-bold text-xl py-4">SEO Optimize</h3>
+                    <p class="text-white text-lg text-center">Lipsum as it is sometimes known is dummy text used in laying out print, graphic or web designs.</p>
+                </div>
+            </div>
+
+         </div>
+
+
+    <!-- client section -->
+         <div class="container mx-auto p-10 ">
+            <div class="pt-10">
+                <h2 class="text-skyblue text-5xl font-bold p-2 text-center">Clients Details</h2>
+                <p class=" leading-6 text-gray-400 text-center  text-xl py-4">What We Provide You ?</p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-12 mt-20">
+                <div class="bg-darkshadow hover:bg-skyblue flex flex-col items-center justify-center py-5 rounded-xl">
+                    <div class="bg-darkblue w-20 h-20 rounded-full flex items-center justify-center ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 fill-none stroke-white"  viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                          </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-darkblue pt-4">NAME</h3>
+                    <p class="text-darkblue text-lg">E-mail</p>
+                </div>
+
+                <div class="bg-darkshadow hover:bg-skyblue flex flex-col items-center justify-center py-5 rounded-xl">
+                    <div class="bg-darkblue w-20 h-20 rounded-full flex items-center justify-center ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 fill-none stroke-white"  viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                          </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-darkblue pt-4">NAME</h3>
+                    <p class="text-darkblue text-lg">E-mail</p>
+                </div>
+                <div class="bg-darkshadow hover:bg-skyblue flex flex-col items-center justify-center py-5 rounded-xl">
+                    <div class="bg-darkblue w-20 h-20 rounded-full flex items-center justify-center ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 fill-none stroke-white"  viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                          </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-darkblue pt-4">NAME</h3>
+                    <p class="text-darkblue text-lg">E-mail</p>
+                </div>
+                <div class="bg-darkshadow hover:bg-skyblue flex flex-col items-center justify-center py-5 rounded-xl">
+                    <div class="bg-darkblue w-20 h-20 rounded-full flex items-center justify-center ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 fill-none stroke-white"  viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                          </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-darkblue pt-4">NAME</h3>
+                    <p class="text-darkblue text-lg">E-mail</p>
+                </div>
+                <div class="bg-darkshadow hover:bg-skyblue flex flex-col items-center justify-center py-5 rounded-xl">
+                    <div class="bg-darkblue w-20 h-20 rounded-full flex items-center justify-center ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 fill-none stroke-white"  viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                          </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-darkblue pt-4">NAME</h3>
+                    <p class="text-darkblue text-lg">E-mail</p>
+                </div>
+                <div class="bg-darkshadow hover:bg-skyblue flex flex-col items-center justify-center py-5 rounded-xl">
+                    <div class="bg-darkblue w-20 h-20 rounded-full flex items-center justify-center ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 fill-none stroke-white"  viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                          </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-darkblue pt-4">NAME</h3>
+                    <p class="text-darkblue text-lg">E-mail</p>
+                </div>
+                
+
+            </div>
          </div>
      </section>
  </body>
