@@ -20,6 +20,7 @@
                          skyblueshadow: '#0BBEAD69',
                          orangeshadow: '#F57F173D',
                          darkshadow:'#5B5B5B',
+                         black:'#000000',
                      }
                  }
              }
@@ -63,10 +64,10 @@
      </header>
 
 
-     <section id="herosection">
-         <div class="bg-darkblue">
+     <section id="herosection" >
+         <div class="bg-darkblue relative z-1">
              <div id="home"
-                 class="container mx-auto grid grid-cols-1 md:grid-cols-2 p-20 px-24 md:h-screen items-center justify-center">
+                 class=" container mx-auto grid grid-cols-1 md:grid-cols-2 p-20 pb-0 px-24 items-center justify-center">
                  <!-- Home image -->
                  <div class="flex justify-center md:order-last order-first ">
                      <div class="border-[16px] border-lightblue rounded-full">
@@ -79,7 +80,7 @@
                      <p class="text-skyblue text-lg md:text-3xl py-3 text-left font-bold px-2">
                          Hello, IM <span class="text-orange">Ali Morshedlou</span>
                      </p>
-                     <h1 class="text-6xl 2xl:text-7xl text-skyblue font-bold text-left">Creative Designer</h1>
+                     <h1 class="text-5xl md:text-6xl 2xl:text-7xl text-skyblue font-bold text-left">Creative Designer</h1>
                      <p class="text-gray-400 text-lg py-3 text-left px-2">Freelancer Web/ Mobile UI/UX Designer with
                          Motion Graphics
                      </p>
@@ -96,21 +97,28 @@
                  </div>
              </div>
          </div>
-         <div class="bg-lightblue h-11"></div>
+         <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path class="fill-darkblue h-5" fill-opacity="1" d="M0,160L30,176C60,192,120,224,180,234.7C240,245,300,235,360,224C420,213,480,203,540,176C600,149,660,107,720,101.3C780,96,840,128,900,165.3C960,203,1020,245,1080,245.3C1140,245,1200,203,1260,170.7C1320,139,1380,117,1410,106.7L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>    
+        </div>
      </section>
 
 
-     <section class="bg-darkblue">
+     <section class="bg-darkblue  border-b-[80px] border-b-transparent">
   <!-- about section -->
          <div class="container mx-auto p-10 ">
              <div class="pt-10">
                  <h2 class="text-skyblue text-5xl font-bold p-2 text-center">About Us</h2>
-                 <p class=" leading-6 text-gray-400 text-center text-xl py-4">Why Choose Me?</p>
-             </div>
+                 <p class=" leading-6 text-gray-400 text-center text-xl py-2">Why Choose Me?</p>
+                 <div class="inline-flex items-center justify-center w-full">
+                    <hr class="w-64 h-1 my-4 bg-skyblue border-0 rounded ">
+                    <div class="absolute px-4 h-3 w-12 -translate-x-1/2 bg-skyblue left-1/2 rounded-full  ">
+                      <p class="text-skyblue"></p>
+                    </div>
+                </div>
 
-             <div class="grid grid-cols-2 mt-20 bg-lightblue ">
+             <div class="grid grid-cols-1 md:grid-cols-2 mt-20 bg-lightblue">
                  <div>
-                     <img class="w-full h-full object-fit"
+                     <img class="w-full h-full object-cover"
                          src="https://media.istockphoto.com/id/511061090/photo/business-office-building-in-london-england.jpg?s=612x612&w=0&k=20&c=nYAn4JKoCqO1hMTjZiND1PAIWoABuy1BwH1MhaEoG6w=" />
                  </div>
                  <div class="flex flex-col  p-10">
@@ -145,10 +153,15 @@
          <div class="container mx-auto p-10 ">
             <div class="pt-10">
                 <h2 class="text-skyblue text-5xl font-bold p-2 text-center">Services</h2>
-                <p class=" leading-6 text-gray-400 text-center  text-xl py-4">What We Provide You ?</p>
-            </div>
+                <p class=" leading-6 text-gray-400 text-center  text-xl py-2">What We Provide You ?</p>
+                <div class="inline-flex items-center justify-center w-full">
+                    <hr class="w-64 h-1 my-4 bg-skyblue border-0 rounded ">
+                    <div class="absolute px-4 h-3 w-12 -translate-x-1/2 bg-skyblue left-1/2 rounded-full  ">
+                      <p class="text-skyblue"></p>
+                    </div>
+                </div>
 
-            <div class="grid grid-cols-3 gap-12 mt-20">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-20">
                 <div class="bg-[#8540FF] flex flex-col items-center justify-center p-10 h-80">
                     <div><svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 fill-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"  >
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
@@ -211,10 +224,15 @@
          <div class="container mx-auto p-10 ">
             <div class="pt-10">
                 <h2 class="text-skyblue text-5xl font-bold p-2 text-center">Clients Details</h2>
-                <p class=" leading-6 text-gray-400 text-center  text-xl py-4">What We Provide You ?</p>
-            </div>
+                <p class=" leading-6 text-gray-400 text-center  text-xl py-2">What We Provide You ?</p>
+                <div class="inline-flex items-center justify-center w-full">
+                    <hr class="w-64 h-1 my-4 bg-skyblue border-0 rounded ">
+                    <div class="absolute px-4 h-3 w-12 -translate-x-1/2 bg-skyblue left-1/2 rounded-full  ">
+                      <p class="text-skyblue"></p>
+                    </div>
+                </div>
 
-            <div class="grid grid-cols-3 gap-12 mt-20">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-20">
                 <div class="bg-darkshadow hover:bg-skyblue flex flex-col items-center justify-center py-5 rounded-xl">
                     <div class="bg-darkblue w-20 h-20 rounded-full flex items-center justify-center ">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 fill-none stroke-white"  viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
@@ -275,6 +293,170 @@
             </div>
          </div>
      </section>
+
+
+     <section>
+            <!-- Resume -->
+            <div class="container mx-auto p-10 ">
+                <div class="pt-10">
+                    <h2 class="text-skyblue text-5xl font-bold p-2 text-center">Resume</h2>
+                    <p class=" leading-6 text-gray-400 text-center  text-xl py-2">My formal Bio Details</p>
+                    <div class="inline-flex items-center justify-center w-full">
+                        <hr class="w-64 h-1 my-4 bg-skyblue border-0 rounded ">
+                        <div class="absolute px-4 h-3 w-12 -translate-x-1/2 bg-skyblue left-1/2 rounded-full  ">
+                          <p class="text-skyblue"></p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-x-12 md:grid-cols-3 mt-20 items-center justify-center">
+                        <div class="w-full h-[96%] border-2 border-black flex ">
+                         <div class="w-20 h-full bg-skyblue">
+                         </div>
+                         <div class="bg-black h-full w-full">
+                        </div>
+                        </div>
+                        
+                        <div class="w-full col-span-2">
+                            <ol class="border-l-4 border-skyblue ">
+                                <!--First item-->
+                                <li>
+                                  <div class="flex-start flex items-center pt-3">
+                                      <div class="-ml-[8px] mr-3 h-[14px] w-[14px] rounded-full bg-skyblue"></div>
+                                      <div class="flex w-full justify-between items-center">
+                                      <h3 class="text-xl font-bold text-orange">Calicut University</h3>
+                                      <button
+                                      class="rounded-full bg-orange text-white py-1 w-32 mx-6 shadow-lg shadow-orangeshadow">2010-2014</button>
+                                    </div>
+                                </div>
+                                    
+                                  <div class="mb-6 ml-4 mt-2">
+                                    <p class="text-lg text-gray-400 pb-3 font-semibold ">
+                                        B.sc in Computer Engineer
+                                      </p>
+                                    <p class="mb-3 text-gray-400 text-lg ">
+                                        Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+                                    </p>
+                                  </div>
+                                </li>
+
+                                <!--Second item-->
+                                <li>
+                                    <div class="flex-start flex items-center pt-3">
+                                        <div class="-ml-[8px] mr-3 h-[14px] w-[14px] rounded-full bg-skyblue"></div>
+                                        <div class="flex w-full justify-between items-center">
+                                        <h3 class="text-xl font-bold text-orange">Calicut University</h3>
+                                        <button
+                                        class="rounded-full bg-orange text-white py-1 w-32 mx-6 shadow-lg shadow-orangeshadow">2010-2014</button>
+                                      </div>
+                                  </div>
+                                      
+                                    <div class="mb-6 ml-4 mt-2">
+                                      <p class="text-lg text-gray-400 pb-3 font-semibold ">
+                                          B.sc in Computer Engineer
+                                        </p>
+                                      <p class="mb-3 text-gray-400 text-lg ">
+                                          Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+                                      </p>
+                                    </div>
+                                  </li>
+                      
+                              
+                                <!--Third item-->
+                                <li>
+                                    <div class="flex-start flex items-center pt-3">
+                                        <div class="-ml-[8px] mr-3 h-[14px] w-[14px] rounded-full bg-skyblue"></div>
+                                        <div class="flex w-full justify-between items-center">
+                                        <h3 class="text-xl font-bold text-orange">Calicut University</h3>
+                                        <button
+                                        class="rounded-full bg-orange text-white py-1 w-32 mx-6 shadow-lg shadow-orangeshadow">2010-2014</button>
+                                      </div>
+                                  </div>
+                                      
+                                    <div class="mb-6 ml-4 mt-2">
+                                      <p class="text-lg text-gray-400 pb-3 font-semibold ">
+                                          B.sc in Computer Engineer
+                                        </p>
+                                      <p class="mb-3 text-gray-400 text-lg ">
+                                          Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+                                      </p>
+                                    </div>
+                                  </li>
+                                
+                              </ol>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+     </section>
+
+     <section class="bg-darkblue">
+        <!-- Portfolio -->
+        <div class="container mx-auto p-10 ">
+            <div class="pt-10">
+                <h2 class="text-skyblue text-5xl font-bold p-2 text-center">Portfolio</h2>
+                <p class=" leading-6 text-gray-400 text-center  text-xl py-2">Check in Our Latest Works</p>
+                <div class="inline-flex items-center justify-center w-full">
+                    <hr class="w-64 h-1 my-4 bg-skyblue border-0 rounded ">
+                    <div class="absolute px-4 h-3 w-12 -translate-x-1/2 bg-skyblue left-1/2 rounded-full  ">
+                      <p class="text-skyblue"></p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+ </section>
+
+ <section>
+    <!-- Pricing -->
+    <div class="container mx-auto p-10 ">
+        <div class="pt-10">
+            <h2 class="text-skyblue text-5xl font-bold p-2 text-center">Pricing</h2>
+            <p class=" leading-6 text-gray-400 text-center  text-xl py-2">Check our Services package</p>
+            <div class="inline-flex items-center justify-center w-full">
+                <hr class="w-64 h-1 my-4 bg-skyblue border-0 rounded ">
+                <div class="absolute px-4 h-3 w-12 -translate-x-1/2 bg-skyblue left-1/2 rounded-full  ">
+                  <p class="text-skyblue"></p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<section >
+    <!-- contact us -->
+    <div class="bg-darkblue">
+    <div class="container mx-auto p-10 ">
+        <div class="pt-10">
+            <h2 class="text-skyblue text-5xl font-bold p-2 text-center">Contact us</h2>
+            <p class=" leading-6 text-gray-400 text-center  text-xl py-2">Let's Keep In Touch</p>
+            <div class="inline-flex items-center justify-center w-full">
+                <hr class="w-64 h-1 my-4 bg-skyblue border-0 rounded ">
+                <div class="absolute px-4 h-3 w-12 -translate-x-1/2 bg-skyblue left-1/2 rounded-full  ">
+                  <p class="text-skyblue"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <p>jtfrds</p>
+</div>
+</section>
+
+
+<footer class="bg-darkkblue">
+<div>
+    <p class="text-lg leading-6 text-center text-gray-400 p-10">© 2022 createuiux. All rights reserved.</p>
+</div>
+</footer>
+
  </body>
 
  </html>
